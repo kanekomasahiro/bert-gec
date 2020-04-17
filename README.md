@@ -16,7 +16,7 @@ If you use any part of this work, make sure you include the following citation:
 - [subword](https://github.com/rsennrich/subword-nmt)
 - [gec-pseudodata](https://github.com/butsugiri/gec-pseudodata)
 
-## How to train
+## How to use
 - First download the necessary tools using the following command:
 ```
 cd scripts
