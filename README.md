@@ -1,4 +1,4 @@
-# Can Encoder-decoder Models Benefit from Pre-trained Language Representation in Grammatical Error Correction?
+# Can Encoder-Decoder Models Benefit from Pre-trained Language Representation in Grammatical Error Correction?
 Code for the paper: "Can Encoder-decoder Models Benefit from Pre-trained Language Representation in Grammatical Error Correction?" (In ACL 2020).
 If you use any part of this work, make sure you include the following citation:
 ```
