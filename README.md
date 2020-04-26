@@ -3,7 +3,7 @@ Code for the paper: "Can Encoder-Decoder Models Benefit from Pre-trained Languag
 If you use any part of this work, make sure you include the following citation:
 ```
 @inproceedings{Kaneko:ACL:2020,
-    title={Can Encoder-decoder Models Benefit from Pre-trained Language Representation in Grammatical Error Correction?},
+    title={Can Encoder-Decoder Models Benefit from Pre-trained Language Representation in Grammatical Error Correction?},
     author={Masahiro Kaneko, Masato Mita, Shun Kiyono, Jun Suzuki and Kentaro Inui},
     booktitle={Proc. of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)},
     year={2020}
