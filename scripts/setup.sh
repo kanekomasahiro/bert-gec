@@ -8,7 +8,7 @@ echo Loading subword
 git clone https://github.com/rsennrich/subword-nmt.git ../subword
 
 echo Loading gec-pseudodata
-git https://github.com/butsugiri/gec-pseudodata.git ../gec-pseudodata
+git clone https://github.com/butsugiri/gec-pseudodata.git ../gec-pseudodata
 
 echo Loading pre-trained GEC model
 mkdir -p ../pseudo_model
