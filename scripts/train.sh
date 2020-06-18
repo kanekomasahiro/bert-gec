@@ -46,6 +46,8 @@ else
         --tgtdict $VOCAB_DIR/dict.trg_bpe8000.txt \
         --workers $cpu_num \
         --bert-model-name $bert_type
+        
+    cp $gec_model $MODEL_DIR/checkpoint_last.pt
 fi
 
 
