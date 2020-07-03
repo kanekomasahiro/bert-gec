@@ -3,13 +3,15 @@ seed=2222
 gec_model=../pseudo_model/ldc_giga.spell_error.pretrain.checkpoint_last.pt
 bert_model=../bert-base-cased
 
-SUBWORD_NMT=../subword-nmt
+SUBWORD_NMT=../subword
 FAIRSEQ_DIR=../bert-nmt
 BPE_MODEL_DIR=../gec-pseudodata/bpe
 DATA_DIR=../data
 VOCAB_DIR=../gec-pseudodata/vocab
 PROCESSED_DIR=../process
 MODEL_DIR=../model/$bert_type/$seed
+
+pre_trained_model=../pretrained/ldc_giga.spell_error.pretrain.checkpoint_last.pt
 
 train_src=$DATA_DIR/train.src
 train_trg=$DATA_DIR/train.trg
@@ -51,7 +53,9 @@ fi
 
 mkdir -p $MODEL_DIR
 
-python -u $FAIRSEQ_DIR/train.py $PROCESSED_DIR/bin \
+cp $pre_trained_model $MODEL_DIR/checkpoint_last.pt
+
+CUDA_VISIBLE_DEVICES=0 python -u $FAIRSEQ_DIR/train.py $PROCESSED_DIR/bin \
     --save-dir $MODEL_DIR \
     --arch transformer_s2_vaswani_wmt_en_de_big \
     --max-tokens 4096 \
