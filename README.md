@@ -11,7 +11,7 @@ If you use any part of this work, make sure you include the following citation:
 ```
 ## Requirements
 - python >= 3.5
-- torch == 1.2.0
+- torch == 1.1.0
 - [bert-nmt](https://github.com/bert-nmt/bert-nmt)
 - [subword](https://github.com/rsennrich/subword-nmt)
 - [gec-pseudodata](https://github.com/butsugiri/gec-pseudodata)
