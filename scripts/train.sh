@@ -55,7 +55,7 @@ mkdir -p $MODEL_DIR
 
 cp $pre_trained_model $MODEL_DIR/checkpoint_last.pt
 
-CUDA_VISIBLE_DEVICES=0 python -u $FAIRSEQ_DIR/train.py $PROCESSED_DIR/bin \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -u $FAIRSEQ_DIR/train.py $PROCESSED_DIR/bin \
     --save-dir $MODEL_DIR \
     --arch transformer_s2_vaswani_wmt_en_de_big \
     --max-tokens 4096 \
