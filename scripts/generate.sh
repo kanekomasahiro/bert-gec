@@ -23,6 +23,7 @@ CUDA_VISIBLE_DEVICES=$gpu python -u ${FAIRSEQ_DIR}/interactive.py $PREPROCESS \
     --nbest ${beam} \
     --no-progress-bar \
     -s src \
+    -t trg \
     --buffer-size 1024 \
     --batch-size 32 \
     --log-format simple \
