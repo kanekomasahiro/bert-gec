@@ -1,13 +1,13 @@
 input=$1
 gpu=$2
 beam=5
-bert_type=../bert-fuse_ged/fine-tuned-bert
+bert_type=bert-base-cased
 SUBWORD_NMT=../subword
 FAIRSEQ_DIR=../bert-nmt
 BPE_MODEL_DIR=../gec-pseudodata/bpe
-MODEL_DIR=../bert-fuse_ged/gec_model
+MODEL_DIR=../bert-fuse
 OUTPUT_DIR=$MODEL_DIR/output
-PREPROCESS=../bert-fuse_ged/preprocess/bin
+PREPROCESS=../bert-fuse
 
 mkdir -p $OUTPUT_DIR
 
