@@ -34,6 +34,7 @@ cd scripts
 ```
 ./generate.sh /path/your/data gpu
 ```
+- The OUTPUT file contains the system outputs of ensembled models.
 
 ## License
 See the LICENSE file
