@@ -29,9 +29,10 @@ cd scripts
 ```
 ./train.sh
 ```
-- You can also correct your ungrammatical data with the following command:
+- You can use [trained model](https://drive.google.com/drive/folders/1h_r46EswcT1q75qwje6h6yJpOxzAG8gP?usp=sharing) with the following command:
+- This model achieves the F score 62.77 on CoNLL.
 ```
-./generate.sh /path/your/data
+./generate.sh /path/your/data gpu
 ```
 
 ## License
