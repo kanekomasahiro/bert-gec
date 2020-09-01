@@ -23,7 +23,7 @@ cd scripts
 ./setup.sh
 ```
 - This code uses [wi+locness dataset](https://www.cl.cam.ac.uk/research/nl/bea2019st/).
-- Note that since the gold of wi+locnness test data is not available, validatuon data was specified as test data.
+- Note that since the gold of wi+locnness test data is not available, validation data was specified as test data.
 - Place your data in the `data` directory if necessary.
 - You can train the BERT-GEC model with the following command:
 ```
